@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="/styles/mobile.css" media="screen and (min-width: 320px) and (max-width: 600px)" rel="stylesheet">
+  <title>Frontend Mentor | Calculator app</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="main-container">
+<h3>calc</h3>
+<span class="theme">THEME</span>
+<div class="slider-container">
+  <input type="range" min="0" max="2" step="1" value="1" class="slider" id="mySlider">
+  <div class="slider-labels">
+    <span class="labels">1</span>
+    <span class="labels">2</span>
+    <span class="labels">3</span>
+  </div>
+</div>
+<input type="number" class="input" readonly>
+
+ <div class="btns">
+  <button>7</button>
+  <button>8</button>
+  <button>9</button>
+  <button class="del">DEL</button>
+  <button>4</button>
+  <button>5</button>
+  <button>6</button>
+  <button>+</button>
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>-</button>
+  <button>.</button>
+  <button>0</button>
+  <button>/</button>
+  <button>x</button>
+  <button class="reset-btn">RESET</button>
+  <button class="equals">=</button>
+ </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
