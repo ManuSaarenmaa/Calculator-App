@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="/styles/mobile.css" media="screen and (min-width: 320px) and (max-width: 600px)" rel="stylesheet">
+  <link href="/styles/mobileT1.css" media="screen and (min-width: 320px) and (max-width: 600px)" rel="stylesheet" id="themeLink">
   <title>Frontend Mentor | Calculator app</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,34 +19,34 @@
 <h3>calc</h3>
 <span class="theme">THEME</span>
 <div class="slider-container">
-  <input type="range" min="0" max="2" step="1" value="1" class="slider" id="mySlider">
+  <input type="range" min="0" max="2" step="1" value="0" class="slider" id="themeSlider">
   <div class="slider-labels">
     <span class="labels">1</span>
     <span class="labels">2</span>
     <span class="labels">3</span>
   </div>
 </div>
-<input type="number" class="input" readonly>
+<input type="text" class="input" id="input" disabled>
 
  <div class="btns">
-  <button>7</button>
-  <button>8</button>
-  <button>9</button>
-  <button class="del">DEL</button>
-  <button>4</button>
-  <button>5</button>
-  <button>6</button>
-  <button>+</button>
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>-</button>
-  <button>.</button>
-  <button>0</button>
-  <button>/</button>
-  <button>x</button>
-  <button class="reset-btn">RESET</button>
-  <button class="equals">=</button>
+  <button onclick="appendNumber(7)">7</button>
+  <button onclick="appendNumber(8)">8</button>
+  <button onclick="appendNumber(9)">9</button>
+  <button onclick="backspace()" class="del">DEL</button>
+  <button onclick="appendNumber(4)">4</button>
+  <button onclick="appendNumber(5)">5</button>
+  <button onclick="appendNumber(6)">6</button>
+  <button onclick="setOperation('+')">+</button>
+  <button onclick="appendNumber(1)">1</button>
+  <button onclick="appendNumber(2)">2</button>
+  <button onclick="appendNumber(3)">3</button>
+  <button onclick="setOperation('-')">-</button>
+  <button onclick="appendNumber('.')">.</button>
+  <button onclick="appendNumber(0)">0</button>
+  <button onclick="setOperation('/')">/</button>
+  <button onclick="setOperation('x')">x</button>
+  <button onclick="clearScreen()" class="reset-btn">RESET</button>
+  <button onclick="calculateResult()" class="equals">=</button>
  </div>
 </div>
 

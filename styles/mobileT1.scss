@@ -1,0 +1,166 @@
+@use 'colors';
+
+*{
+    font-family: "League Spartan", serif;
+}
+
+
+body{
+    margin: 0;
+    position: absolute;
+    display: flex;
+}
+
+h3{
+    color: colors.$white;
+    font-size: 2.2rem;
+    margin: 0;
+    width: 20%;
+    padding: 10%;
+}
+
+.theme{
+    color: colors.$white;
+    position: absolute;
+    font-size: 0.9rem;
+    right: 0;
+    top: 0;
+    margin-right: 25%;
+    margin-top: 15%;
+
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: colors.$mainbg;
+}
+
+.input{
+    width: 86%;
+    height: 6rem;
+    background-color: colors.$screenbg;
+    border: transparent;
+    border-radius: 10px;
+    margin-left: 5%;
+    color: colors.$white;
+    text-align: right;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 2%;
+    column-gap: 3%;
+    justify-content: center;
+    height: 60%;
+    width: 80%;
+    border-radius: 15px;
+    background-color: colors.$screenbg;
+    margin: 5%;
+    padding: 5% 5% 5% 5%;
+    position: absolute;
+    bottom: 10;
+    align-self: center;
+}
+
+button{
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 4.5rem;
+    width: 4.5rem;
+    box-shadow: 0px 5px 0px colors.$graykeyshadow;
+}
+
+button:active{
+    background-color: hsl(30, 25%, 100%);;
+}
+
+.reset-btn:active{
+    background-color: hsl(225, 21%, 70%); 
+}
+
+.del:active{
+    background-color: hsl(225, 21%, 70%);
+}
+
+.equals:active{
+    background-color: hsl(6, 63%, 55%);;
+}
+
+.del{
+    color: colors.$white;
+    background-color: colors.$keybg;
+    box-shadow: 0px 5px 0px colors.$keyshadow;
+}
+
+.reset-btn{
+    grid-column: -5 / -3;
+    background-color: colors.$keybg;
+    color: colors.$white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 10rem;
+    box-shadow: 0px 5px 0px colors.$keyshadow;
+}
+
+.equals{
+    grid-column: -1 / -3;
+    background-color: colors.$redkeybg;
+    color: colors.$white;
+    font-size: 1.5rem;
+    width: 9.7rem;
+    box-shadow: 0px 5px 0px colors.$redkeyshadow;
+}
+
+
+.slider-container{
+    position: absolute;
+    width: 15%;
+    float: right;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 0;
+    right: 0;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+.slider{
+    width: 100%;
+    appearance: none;
+    height: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: colors.$screenbg;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    cursor: pointer;
+    background-color: colors.$redkeybg;
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.slider-labels{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    color: colors.$white;
+}
+
+
