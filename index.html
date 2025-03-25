@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="/styles/mobileT1.css" media="screen and (min-width: 320px) and (max-width: 600px)" rel="stylesheet" id="themeLink">
+  <link href="/styles/mobileT1.css" media="screen and (min-width: 320px) and (max-width: 700px)" rel="stylesheet" id="themeLink">
+  <link href="/styles/styleT1.css" media="screen and (min-width: 700px)" rel="stylesheet" id="themeLink2">
   <title>Frontend Mentor | Calculator app</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-
-
 </head>
+
 <body>
 <div class="main-container">
+<div class="top-container">
 <h3>calc</h3>
 <span class="theme">THEME</span>
 <div class="slider-container">
@@ -26,8 +27,9 @@
     <span class="labels">3</span>
   </div>
 </div>
+</div>
 <input type="text" class="input" id="input" disabled>
-
+<div class="button-container">
  <div class="btns">
   <button onclick="appendNumber(7)">7</button>
   <button onclick="appendNumber(8)">8</button>
@@ -49,7 +51,7 @@
   <button onclick="calculateResult()" class="equals">=</button>
  </div>
 </div>
-
+</div>
 <script src="app.js"></script>
 </body>
 </html>

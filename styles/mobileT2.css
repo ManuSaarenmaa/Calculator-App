@@ -3,6 +3,7 @@
 /*theme 3*/
 * {
   font-family: "League Spartan", serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -25,7 +26,7 @@ h3 {
   font-size: 0.9rem;
   right: 0;
   top: 0;
-  margin-right: 25%;
+  margin-right: 30%;
   margin-top: 15%;
 }
 
@@ -36,71 +37,76 @@ h3 {
 }
 
 .input {
-  width: 86%;
+  width: 90vw;
   height: 6rem;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 93%);
   border: transparent;
   border-radius: 10px;
   margin-left: 5%;
-  color: hsl(52, 100%, 62%);
+  color: hsl(221, 14%, 31%);
   text-align: right;
   font-size: 3rem;
   font-weight: bold;
   padding-right: 20px;
 }
 
+.button-container {
+  background-color: hsl(0, 5%, 81%);
+  width: 90vw;
+  height: 60vh;
+  margin: auto;
+  margin-top: 7%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btns {
   display: grid;
+  width: min(85vw, 600px);
+  height: min(85vh, 500px);
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  row-gap: 2%;
-  -moz-column-gap: 3%;
-       column-gap: 3%;
-  justify-content: center;
-  height: 60%;
-  width: 80%;
-  border-radius: 15px;
-  background-color: hsl(0, 5%, 81%);
-  margin: 5%;
-  padding: 5% 5% 5% 5%;
-  position: absolute;
-  bottom: 10;
-  align-self: center;
+  grid-template-rows: repeat(5, 20%);
+  align-items: center;
+  justify-items: center;
 }
 
 button {
   border-radius: 5px;
   border: transparent;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  height: 4.5rem;
-  width: 4.5rem;
+  width: 85%;
+  height: 75%;
+  aspect-ratio: 1/1;
   color: hsl(60, 10%, 19%);
   background-color: hsl(45, 7%, 89%);
   box-shadow: 0px 5px 0px hsl(35, 11%, 61%);
 }
 
 button:active {
-  background-color: hsl(268, 47%, 41%);
+  background-color: hsl(45, 7%, 99%);
 }
 
 .reset-btn:active {
-  background-color: hsl(281, 89%, 46%);
+  background-color: hsl(185, 42%, 57%);
 }
 
 .del:active {
-  background-color: hsl(281, 89%, 46%);
+  background-color: hsl(185, 42%, 57%);
 }
 
 .equals:active {
-  background-color: hsl(176, 100%, 64%);
+  background-color: hsl(25, 98%, 60%);
 }
 
 .del {
   color: hsl(0, 0%, 100%);
   background-color: hsl(185, 42%, 37%);
   box-shadow: 0px 5px 0px hsl(185, 58%, 25%);
+  font-size: 1.5rem;
 }
 
 .reset-btn {
@@ -109,7 +115,7 @@ button:active {
   color: hsl(0, 0%, 100%);
   font-weight: bold;
   font-size: 1.2rem;
-  width: 10rem;
+  width: 90%;
   box-shadow: 0px 5px 0px hsl(185, 58%, 25%);
 }
 
@@ -118,9 +124,8 @@ button:active {
   background-color: hsl(25, 98%, 40%);
   color: hsl(0, 0%, 100%);
   font-size: 1.5rem;
-  width: 9.7rem;
+  width: 90%;
   box-shadow: 0px 5px 0px hsl(25, 99%, 27%);
-  color: hsl(198, 20%, 13%);
 }
 
 .slider-container {
@@ -140,7 +145,7 @@ button:active {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  height: 10px;
+  height: 20px;
   border-radius: 10px;
   outline: none;
   background-color: hsl(0, 5%, 81%);
@@ -150,7 +155,7 @@ button:active {
 
 input[type=range]::-webkit-slider-thumb {
   cursor: pointer;
-  background-color: hsl(176, 100%, 44%);
+  background-color: hsl(25, 98%, 40%);
   width: 12px;
   height: 12px;
   border-radius: 5px;
