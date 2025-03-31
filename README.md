@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/calc%20desktop.png,)
+![](/calc20desktop.png,)
 
 ### Links
 
