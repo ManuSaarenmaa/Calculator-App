@@ -60,7 +60,6 @@ function clearScreen() {
     document.getElementById("input").value = "";
 }
 
-
 function backspace() {
     if (actionHistory.length === 0) return;
 
@@ -82,20 +81,22 @@ function backspace() {
     }
 }
 
-
-
-
+/*Script for themes*/ 
 const themeSlider = document.getElementById("themeSlider")
 const themelink = document.getElementById("themeLink")
+const themelinkDesktop = document.getElementById("themelinkDesktop");
 
 themeSlider.addEventListener("input", function() {
     const themeIndex = themeSlider.value;
 
-    if(themeIndex == 0) {
+    if (themeIndex == 0) {
         themelink.href = "/styles/mobileT1.css";
-    }else if (themeIndex == 1) {
+        themelinkDesktop.href = "/styles/styleT1.css";
+    } else if (themeIndex == 1) {
         themelink.href = "/styles/mobileT2.css";
-    }else if (themeIndex == 2) {
-        themelink.href = "/styles/mobileT3.css"
+        themelinkDesktop.href = "/styles/styleT2.css";
+    } else if (themeIndex == 2) {
+        themelink.href = "/styles/mobileT3.css";
+        themelinkDesktop.href = "/styles/styleT3.css";
     }
 });
